@@ -15,7 +15,7 @@ def sms_rly():
 
     # Create reply
     resp = MessagingResponse()
-    resp.message("hey nani you said: {}".format(msg))
+    resp.message(msg)
 
     return str(resp)
 
