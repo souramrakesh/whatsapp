@@ -8,7 +8,7 @@ def hello():
     return "Hello!"
 @app.route("/sms", methods=['POST'])
 
-def mg(msg):
+def mg():
     if msg == "I love you ":
         return "I love you too banggaru "
     else:
