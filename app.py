@@ -6,12 +6,14 @@ app =  Flask(__name__)
 @app.route("/")
 def hello():
     return "Hello!"
-@app.route("/sms", methods=['POST'])
+@app.route("/sms", methods=['POST']) 
 
 def sms_rly():
     """Respond to incoming calls with a simple text message."""
     # Fetch the message
     msg = request.form.get('Body')
+    If msg == "I love you ":
+       Print ("I love you banggaru ")
 
     # Create reply
     resp = MessagingResponse()
