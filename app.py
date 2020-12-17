@@ -8,21 +8,14 @@ def hello():
     return "Hello!"
 @app.route("/sms", methods=['POST'])
 
-#def mg(msg):
-    if msg == "hi":
-        return "hlo"
-    else:
-        return msg 
-
 def sms_rly():
     """Respond to incoming calls with a simple text message."""
     # Fetch the message
     msg = request.form.get('Body')
-  
 
     # Create reply
     resp = MessagingResponse()
-    resp.message("You said: {}".format(msg)
+    resp.message("You said: {}".format(msg))
 
     return str(resp)
 
