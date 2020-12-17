@@ -16,7 +16,7 @@ def sms_rly():
 
     # Create reply
     resp = MessagingResponse()
-    resp.message("Gd to see you:".format(msg))
+    resp.message("Gd to see you:{}".format(msg))
 
     return str(resp)
 
