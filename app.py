@@ -8,7 +8,7 @@ def hello():
     return "Hello!"
 @app.route("/sms", methods=['POST'])
 
-def mg(msg):
+#def mg(msg):
     if msg == "hi":
         return "hlo"
     else:
@@ -22,7 +22,7 @@ def sms_rly():
 
     # Create reply
     resp = MessagingResponse()
-    resp.message("You said: {}".format(mg(msg))
+    resp.message("You said: {}".format(msg)
 
     return str(resp)
 
