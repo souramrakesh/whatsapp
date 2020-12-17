@@ -7,7 +7,9 @@ app =  Flask(__name__)
 def hello():
     return "Hello!"
 @app.route("/sms", methods=['POST'])
-def mg(msg):
+
+
+#def mg(msg):
     if msg == "hi":
         return "hlo"
     else:
@@ -21,7 +23,7 @@ def sms_rly():
 
     # Create reply
     resp = MessagingResponse()
-    resp.message(mg(msg))
+    resp.message("Gd to see you:".format(msg))
 
     return str(resp)
 
