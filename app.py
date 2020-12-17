@@ -21,7 +21,7 @@ def sms_rly():
 
     # Create reply
     resp = MessagingResponse()
-    resp.message("You said: {} and my rly is {}".format(msg,mg(msg)))
+    resp.message(mg(msg))
 
     return str(resp)
 
