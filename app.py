@@ -7,13 +7,6 @@ app =  Flask(__name__)
 def hello():
     return "Hello!"
 @app.route("/sms", methods=['POST'])
-
-
-#def mg(msg):
-    if msg == "hi":
-        return "hlo"
-    else:
-        return msg 
     
     
 def sms_rly():
